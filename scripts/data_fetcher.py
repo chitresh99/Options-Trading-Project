@@ -35,6 +35,6 @@ async def fetch_realtime_stock_price(symbol):
 if __name__ == "__main__":
     async def test():
         async for price in fetch_realtime_stock_price("AAPL"):
-            print(f"📈 Live Price: ${price:.2f}")
+            print(f"Live Price: ${price:.2f}")
 
     asyncio.run(test())
